@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Reproductor de Musica</title>
+    <!-- Incluye Boostrap y Boostrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Cargar Howler.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="container text-center my-4">
+        <div class="card bg-success" id="music-card">
+            <img src="" alt="Portada del Album" class="card-img-top img" id="albumCover">
+            <div class="card-body">
+                <h1 class="card-tittle" id="songTittle"></h1>
+                <p class="card-text" id="songArtist"></p>
+                <div class="btn-group">
+                    <button id="prev" class="btn btn-primary">
+                        Anterior
+                    </button>
+
+                    <button id="play" class="btn btn-info" title="Reproducir">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </button>
+
+                    <button id="pause" class="btn btn-danger" title="Pausar">
+                        <i class="bi bi-pause-circle-fill"></i>
+                    </button>
+
+                    <button id="next" class="btn btn-primary" title="Siguiente">
+                        Siguiente
+                    </button>
+                    <div class="form-group" id="volumen-container">
+                        <label for="volume">Volumen</label>
+                        <input type="range" id="volume" class="form-control" min="0" max="1" step="0.01"
+                        value="0.5">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="javascript/main.js"></script>
+
+</body>
+</html>
