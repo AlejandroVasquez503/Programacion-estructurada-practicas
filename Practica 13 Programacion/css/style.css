@@ -1,0 +1,52 @@
+/* DEFAULT */
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 220px 600px ;
+    display: flex;
+    flex-direction: column;
+}
+.fa-button{
+    padding: 10px 20px;
+    min-width: 100px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+/* DARK MODE */
+.dark-mode{
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+.dark-mode .fa-button{
+    background: rgb(70, 70, 70);
+    color: #fff;
+}
+.dark-mode h2::before{
+    content: "Dark Mode";
+}
+
+
+/* LIGHT MODE */
+.light-mode h2::before{
+    color: #333;
+    content: "Light Mode";
+}
+
+
+/* RESET MODE */
+.reset-mode{
+    background: #EEEDED;
+    color: #333;
+}
+.reset-mode .fa-button{
+    background: rgb(201, 198, 198);
+}
+.reset-mode h2::before{
+    content: "Reset Mode";
+}
