@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizarra usando CANVAS API</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>PIZARRA</h1>
+    <!-- Contenedor del selector de color -->
+    <div id="colorPickerContainer">
+        <label for="colorPicker" id="colorPickerLabel">Seleccionar color de pincel</label>
+        <input type="color" id="colorPicker" value="#000000">
+    </div>
+    <!-- Lienzo donde se realizara el dibujo con la API CANVAS -->
+    <canvas id="myCanvas" width="1600" height="1000"></canvas>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
